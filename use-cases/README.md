@@ -1,16 +1,16 @@
 # Anwendungsfälle
 
 Zur Evaluation der praktischen Nutzbarkeit der PASTA-Methode wurden wie in Kapitel 8 beschrieben drei Anwendungsfälle umgesetzt.
-Im ersten Anwendungsfall wird das Problem des maximalen Schnittes mittels des QAOA-Algorithmus gelöst.
-Der zweite Anwendungsfall zeigt wie Kostümdaten aus dem Humantiesbereich mittels des Quantum K-Mean Algorithmus geclustert und mit einer Quantum Support Vector Machine klassifziert werden können.
-Zuletzt wird im letzten Anwendungsfall der VQE-Algorithmus verwendet um Eigenwerte zu bestimmen.
+Im [ersten Anwendungsfall](./Use-Case-QAOA) wird das Problem des maximalen Schnittes mittels des QAOA-Algorithmus gelöst.
+Der [zweite Anwendungsfall](./Use-Case-QML) zeigt wie Kostümdaten aus dem Humantiesbereich mittels des Quantum K-Mean Algorithmus geclustert und mit einer Quantum Support Vector Machine klassifziert werden können.
+Zuletzt wird im [letzten Anwendungsfall](./Use-Case-VQE) der VQE-Algorithmus verwendet um Eigenwerte zu bestimmen.
 
 Im Folgenden wird die generelle Vorgehensweise zur Umsetzung der Anwendungsfälle exemplarisch anhand des ersten Anwendungsfall demonstriert.
 Details über den zweiten und dritten Anwendungsfall befinden sich in den entsprechenden Ordnern.
 
-Ein Video, welches die Umsetzung der musterbasierten Methode zur Generierung von Quantenworkflows zeigt, ist auf YouTube verfügbar.
+Ein Video, welches die Umsetzung der musterbasierten Methode zur Generierung von Quantenworkflows zeigt, ist auf [YouTube](https://youtu.be/6evaPun4HPA) verfügbar.
 
-[![HERE](https://youtu.be/6evaPun4HPA)](https://youtu.be/6evaPun4HPA)
+
 
 
 ## Setup
