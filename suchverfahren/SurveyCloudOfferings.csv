@@ -1,0 +1,83 @@
+﻿ ;Alice & Bob;Comment;Link               ;AWS Braket;Comment                    ;Link;Azure Quantum;Comment ;Link ;IBMQ;Comment   ;Link    ;IonQ Quantum Cloud;Comment      ;Link         ;qBraid Quantum Platform;Comment       ;Link             ;Quandela Cloud;Comment            ;Link                         ;Quantum Inspire;Comment               ;Link                             
+Access Models;;;;;;;;;;;;;;;;;;;;;;;;
+Queue;Yes;;;Yes;;https://docs.aws.amazon.com/braket/latest/developerguide/braket-submit-to-qpu.html;Yes;;https://learn.microsoft.com/en-us/azure/quantum/how-to-work-with-jobs;Yes;;https://docs.quantum.ibm.com/guides/fair-share-scheduler;Yes;;https://ionq.com/quantum-cloud#access-options;Yes;;https://docs.qbraid.com/cli/api-reference/qbraid_jobs#qbraid-jobs-state;Yes;;;Yes;;https://www.quantum-inspire.com/kbase/executing-your-algorithm/
+Prioritized Queue;No;No documentation found;;Yes;When using hybrid jobs corresponding tasks get priority when the hybrid job starts;https://docs.aws.amazon.com/braket/latest/developerguide/braket-terms.html;Yes;Using Sessions;https://learn.microsoft.com/en-us/azure/quantum/hybrid-computing-interactive;Yes;Using Qiskit Sessions;https://docs.quantum.ibm.com/guides/execution-modes;No;;https://docs.ionq.com/glossary#job-queue;No;No documentation found;;Yes;High priority for jobs in Enterprise plan;https://www.quandela.com/legal-terms/;No;No documentation found;
+Exclusive Time Slots;Yes;;https://felis.alice-bob.com/docs/reference/faq/;Yes;Braket Direct;https://aws.amazon.com/braket/pricing/;No;No documentation found;;Yes;Enabled for premium plans;https://docs.quantum.ibm.com/announcements/product-updates/2024-04-22-session-changes;Yes;;https://docs.ionq.com/glossary#job-queue;No;No documentation found;;Yes;Only in expert plan;https://cloud.quandela.com/webide/billing-offer;No;No documentation found;
+;;;;;;;;;;;;;;;;;;;;;;;;
+Batch Processing;Yes;;https://felis.alice-bob.com/docs/felis_cloud/run_multiple_circuits/;Yes;;https://docs.aws.amazon.com/braket/latest/developerguide/braket-batching-tasks.html;No;;https://learn.microsoft.com/en-us/azure/quantum/hybrid-computing-overview;Yes;;https://docs.quantum.ibm.com/guides/run-jobs-batch;Yes;;https://docs.ionq.com/api-reference/v0.3/core-concepts;No;;https://docs.qbraid.com/sdk/user-guide/programs;Yes;;https://perceval.quandela.net/docs/v0.11/algorithms.html;No;No documentation found;
+;;;;;;;;;;;;;;;;;;;;;;;;
+Circuit Cutting ;No;;;No;No documentation found;;No;No documentation found;;No;Planned for 2025 ;https://www.ibm.com/quantum/technology;No;No documentation found;;No;No documentation found;;No;No documentation found;;No;No documentation found;
+;;;;;;;;;;;;;;;;;;;;;;;;
+Error Handling;;;;;;;;;;;;;;;;;;;;;;;;
+Error Mitigation;No;No documentation found;;Yes;;https://docs.aws.amazon.com/braket/latest/developerguide/error-mitigation-aria.html;Yes;Depending on the QPU, e.g., supported for IonQ;https://learn.microsoft.com/en-us/azure/quantum/provider-ionq;Yes;;https://www.ibm.com/quantum/technology;Yes;;https://docs.ionq.com/api-reference/v0.3/migrating-from-old-versions#new-features;Yes;For some providers, e.g., IonQ;https://docs.qbraid.com/home/pricing#quantum-computers-on-demand;Yes;;https://www.quandela.com/products-and-services/cloud/;No;No documentation found;
+Error Correction;No;No documentation found;;No;No documentation found;;No;EC techniques documented but not included in the offering;https://learn.microsoft.com/en-us/azure/quantum/concepts-error-correction;No;Demonstration planned for 2026, error corrected system for 2029;https://www.ibm.com/quantum/technology;No;No documentation found;;No;No documentation found;;No;Part of the roadmap for 2027;https://www.quandela.com/technology/roadmap/;No;No documentation found;
+;;;;;;;;;;;;;;;;;;;;;;;;
+Hybrid Runtime;No;No documentation found;;Yes;;https://docs.aws.amazon.com/braket/latest/developerguide/braket-build-jobs.html;Yes;Currently only for Quantinuum QPUs;https://learn.microsoft.com/en-us/azure/quantum/hybrid-computing-integrated;Yes;;https://www.ibm.com/quantum/technology;No;No documentation found;;No;No documentation found;;No;No documentation found;;No;No documentation found;
+;;;;;;;;;;;;;;;;;;;;;;;;
+Integrated Dev Env;;;;;;;;;;;;;;;;;;;;;;;;
+Composer;No;No documentation found;;No;No documentation found;;No;No documentation found;;Yes;;https://quantum.ibm.com/composer/files/new;No;No documentation found;;Yes;;https://account.qbraid.com/quantumcomposer;No;No documentation found;;No;No documentation found;
+Online Code Editor;No;No documentation found;;Yes;;https://docs.aws.amazon.com/braket/latest/developerguide/braket-get-started-create-notebook.html;Yes;;https://learn.microsoft.com/en-us/azure/quantum/get-started-jupyter-notebook;No;IBM Quantum Lab retired on 15 May 2024;https://docs.quantum.ibm.com/announcements/product-updates/2024-03-22-announcement-cloud-simulators-and-lab;No;No documentation found;;Yes;;https://docs.qbraid.com/lab/user-guide/overview;Yes;;https://cloud.quandela.com/webide/notebook;Yes;;https://www.quantum-inspire.com/kbase/working-with-the-editor/
+;;;;;;;;;;;;;;;;;;;;;;;;
+Pricing Models;;;;;;;;;;;;;;;;;;;;;;;;
+Time-based;Yes;;https://felis.alice-bob.com/docs/felis_cloud/about_felis_cloud/;Yes;When using Braket Direct;https://aws.amazon.com/braket/pricing/;Yes;Depending on the QPU provider, e.g., PASQAL;https://learn.microsoft.com/en-us/azure/quantum/pricing;Yes;;https://www.ibm.com/quantum/pricing;No;;https://ionq.com/quantum-cloud#access-options;No;;https://docs.qbraid.com/home/pricing#quantum-computers-on-demand;No;;https://cloud.quandela.com/webide/billing-offer;No;Completly for free at the moment;https://www.quantum-inspire.com/kbase/accounts/#account-privileges
+Circuit-based;No;;https://felis.alice-bob.com/docs/felis_cloud/about_felis_cloud/;Yes;;https://aws.amazon.com/braket/pricing/;Yes;Depending on the QPU provider, e.g., IonQ;https://learn.microsoft.com/en-us/azure/quantum/pricing;No;;https://www.ibm.com/quantum/pricing;Yes;;https://ionq.com/programs/research-credits/resource-estimator;Yes;;https://docs.qbraid.com/home/pricing#quantum-computers-on-demand;Yes;;https://cloud.quandela.com/webide/billing-offer;No;Completly for free at the moment;https://www.quantum-inspire.com/kbase/accounts/#account-privileges
+Subscription-based;No;;https://felis.alice-bob.com/docs/felis_cloud/about_felis_cloud/;No;;https://aws.amazon.com/braket/pricing/;Yes;;https://learn.microsoft.com/en-us/azure/quantum/pricing;No;;https://www.ibm.com/quantum/pricing;No;;https://ionq.com/quantum-cloud#access-options;No;;https://docs.qbraid.com/home/pricing#quantum-computers-on-demand;Yes;Expert plan - requires contact to Quandela;https://cloud.quandela.com/webide/billing-offer;No;Completly for free at the moment;https://www.quantum-inspire.com/kbase/accounts/#account-privileges
+;;;;;;;;;;;;;;;;;;;;;;;;
+Trial Access;Yes;;https://felis.alice-bob.com/docs/felis_cloud/about_felis_cloud/;No;Only for simulators as part of the AWS Free Tier;https://aws.amazon.com/free;Yes;;https://learn.microsoft.com/en-us/azure/quantum/azure-quantum-credits;Yes;10 min runtime per month;https://www.ibm.com/quantum/pricing;No;Only for academic purposes;https://ionq.com/programs/research-credits;No;;https://account.qbraid.com/subscription;Yes;Not for all QPUs;https://cloud.quandela.com/webide/billing-offer;Yes;Completly for free at the moment;https://www.quantum-inspire.com/kbase/accounts/#account-privileges
+;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;

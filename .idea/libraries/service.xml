@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="service">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/docker/initialized-winery/tosca-definitions/artifacttemplates/https%3A%2F%2Fust-quantil.github.io%2Fartifacttemplates/QiskitRuntimeAgentContainer_DA/files/service.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

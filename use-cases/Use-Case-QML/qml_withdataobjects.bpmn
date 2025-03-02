@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:quantme="https://github.com/UST-QuAntiL/QuantME-Quantum4BPMN" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="sample-diagram" targetNamespace="http://bpmn.io/schema/bpmn" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd">
+  <bpmn2:process id="Process_1" isExecutable="true">
+    <bpmn2:startEvent id="StartEvent_1">
+      <bpmn2:outgoing>Flow_0uvz93z</bpmn2:outgoing>
+    </bpmn2:startEvent>
+    <bpmn2:subProcess id="Activity_1nii9zd" name="Quantum Clustering">
+      <bpmn2:incoming>Flow_0uvz93z</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_0zsh6o2</bpmn2:outgoing>
+      <bpmn2:dataOutputAssociation id="DataOutputAssociation_160lyf6">
+        <bpmn2:targetRef>DataObjectReference_0hqsfv2</bpmn2:targetRef>
+      </bpmn2:dataOutputAssociation>
+      <bpmn2:startEvent id="Event_1mrsqpw">
+        <bpmn2:outgoing>Flow_18tfuoo</bpmn2:outgoing>
+      </bpmn2:startEvent>
+      <bpmn2:sequenceFlow id="Flow_18tfuoo" sourceRef="Event_1mrsqpw" targetRef="Activity_1ovi5wq" />
+      <bpmn2:sequenceFlow id="Flow_1e0y0iq" sourceRef="Activity_1ovi5wq" targetRef="Activity_090eey0" />
+      <bpmn2:endEvent id="Event_1tvmymu">
+        <bpmn2:incoming>Flow_09ng99x</bpmn2:incoming>
+      </bpmn2:endEvent>
+      <bpmn2:sequenceFlow id="Flow_09ng99x" sourceRef="Activity_090eey0" targetRef="Event_1tvmymu" />
+      <quantme:quantumCircuitLoadingTask id="Activity_1ovi5wq" name="Generate &#10;Circuit">
+        <bpmn2:incoming>Flow_18tfuoo</bpmn2:incoming>
+        <bpmn2:outgoing>Flow_1e0y0iq</bpmn2:outgoing>
+        <bpmn2:dataOutputAssociation id="DataOutputAssociation_1vunuq5">
+          <bpmn2:targetRef>DataObjectReference_082copy</bpmn2:targetRef>
+        </bpmn2:dataOutputAssociation>
+      </quantme:quantumCircuitLoadingTask>
+      <bpmn2:serviceTask id="Activity_090eey0" name="Invoke&#10;Hybrid Program">
+        <bpmn2:incoming>Flow_1e0y0iq</bpmn2:incoming>
+        <bpmn2:outgoing>Flow_09ng99x</bpmn2:outgoing>
+        <bpmn2:property id="Property_1ox7pux" name="__targetRef_placeholder" />
+        <bpmn2:dataInputAssociation id="DataInputAssociation_0cqau4l">
+          <bpmn2:sourceRef>DataObjectReference_082copy</bpmn2:sourceRef>
+          <bpmn2:targetRef>Property_1ox7pux</bpmn2:targetRef>
+        </bpmn2:dataInputAssociation>
+      </bpmn2:serviceTask>
+      <quantme:quantumCircuitObject id="DataObjectReference_082copy" dataObjectRef="DataObject_0t7iyuy" />
+      <bpmn2:dataObject id="DataObject_0t7iyuy" />
+    </bpmn2:subProcess>
+    <bpmn2:sequenceFlow id="Flow_0uvz93z" sourceRef="StartEvent_1" targetRef="Activity_1nii9zd" />
+    <bpmn2:subProcess id="Activity_058t75e" name="Quantum Classification">
+      <bpmn2:incoming>Flow_0zsh6o2</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_0b6z7wq</bpmn2:outgoing>
+      <bpmn2:property id="Property_1wvkkqe" name="__targetRef_placeholder" />
+      <bpmn2:dataInputAssociation id="DataInputAssociation_078k2ly">
+        <bpmn2:sourceRef>DataObjectReference_0hqsfv2</bpmn2:sourceRef>
+        <bpmn2:targetRef>Property_1wvkkqe</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataOutputAssociation id="DataOutputAssociation_0qnzfxh">
+        <bpmn2:targetRef>DataObjectReference_16ftv9d</bpmn2:targetRef>
+      </bpmn2:dataOutputAssociation>
+      <bpmn2:startEvent id="Event_1wm6ixl">
+        <bpmn2:outgoing>Flow_1rj7dd8</bpmn2:outgoing>
+      </bpmn2:startEvent>
+      <bpmn2:sequenceFlow id="Flow_1rj7dd8" sourceRef="Event_1wm6ixl" targetRef="Activity_1e9w0rk" />
+      <bpmn2:task id="Activity_123cdvm" name="Invoke&#10;Hybrid Program">
+        <bpmn2:incoming>Flow_1rid66o</bpmn2:incoming>
+        <bpmn2:outgoing>Flow_0aez9rc</bpmn2:outgoing>
+        <bpmn2:property id="Property_0emlnl1" name="__targetRef_placeholder" />
+        <bpmn2:dataInputAssociation id="DataInputAssociation_08jpvy6">
+          <bpmn2:sourceRef>DataObjectReference_1iwaz6w</bpmn2:sourceRef>
+          <bpmn2:targetRef>Property_0emlnl1</bpmn2:targetRef>
+        </bpmn2:dataInputAssociation>
+      </bpmn2:task>
+      <bpmn2:sequenceFlow id="Flow_1rid66o" sourceRef="Activity_1e9w0rk" targetRef="Activity_123cdvm" />
+      <bpmn2:endEvent id="Event_1i4jtdb">
+        <bpmn2:incoming>Flow_0aez9rc</bpmn2:incoming>
+      </bpmn2:endEvent>
+      <bpmn2:sequenceFlow id="Flow_0aez9rc" sourceRef="Activity_123cdvm" targetRef="Event_1i4jtdb" />
+      <quantme:quantumCircuitLoadingTask id="Activity_1e9w0rk" name="Generate&#10;Circuit">
+        <bpmn2:incoming>Flow_1rj7dd8</bpmn2:incoming>
+        <bpmn2:outgoing>Flow_1rid66o</bpmn2:outgoing>
+        <bpmn2:dataOutputAssociation id="DataOutputAssociation_0wq16q0">
+          <bpmn2:targetRef>DataObjectReference_1iwaz6w</bpmn2:targetRef>
+        </bpmn2:dataOutputAssociation>
+      </quantme:quantumCircuitLoadingTask>
+      <quantme:quantumCircuitObject id="DataObjectReference_1iwaz6w" dataObjectRef="DataObject_16ld9ov" />
+      <bpmn2:dataObject id="DataObject_16ld9ov" />
+    </bpmn2:subProcess>
+    <bpmn2:sequenceFlow id="Flow_0zsh6o2" sourceRef="Activity_1nii9zd" targetRef="Activity_058t75e" />
+    <bpmn2:endEvent id="Event_1xqt97s">
+      <bpmn2:incoming>Flow_0g6gr12</bpmn2:incoming>
+    </bpmn2:endEvent>
+    <bpmn2:sequenceFlow id="Flow_0b6z7wq" sourceRef="Activity_058t75e" targetRef="Activity_0318r3j" />
+    <bpmn2:sequenceFlow id="Flow_0g6gr12" sourceRef="Activity_0318r3j" targetRef="Event_1xqt97s" />
+    <bpmn2:userTask id="Activity_0318r3j" name="Analyze&#10;Results">
+      <bpmn2:incoming>Flow_0b6z7wq</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_0g6gr12</bpmn2:outgoing>
+      <bpmn2:property id="Property_0tot928" name="__targetRef_placeholder" />
+      <bpmn2:dataInputAssociation id="DataInputAssociation_00md50f">
+        <bpmn2:sourceRef>DataObjectReference_16ftv9d</bpmn2:sourceRef>
+        <bpmn2:targetRef>Property_0tot928</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+    </bpmn2:userTask>
+    <bpmn2:dataObjectReference id="DataObjectReference_0hqsfv2" dataObjectRef="DataObject_0ljor7c" />
+    <bpmn2:dataObject id="DataObject_0ljor7c" />
+    <bpmn2:dataObjectReference id="DataObjectReference_16ftv9d" dataObjectRef="DataObject_1prt9mp" />
+    <bpmn2:dataObject id="DataObject_1prt9mp" />
+  </bpmn2:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Process_1">
+      <bpmndi:BPMNShape id="Event_1xqt97s_di" bpmnElement="Event_1xqt97s">
+        <dc:Bounds x="1792" y="240" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1n4j7dz_di" bpmnElement="Activity_0318r3j">
+        <dc:Bounds x="1650" y="218" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_StartEvent_1" bpmnElement="StartEvent_1">
+        <dc:Bounds x="462" y="240" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="DataObjectReference_0hqsfv2_di" bpmnElement="DataObjectReference_0hqsfv2">
+        <dc:Bounds x="1062" y="95" width="36" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="DataObjectReference_16ftv9d_di" bpmnElement="DataObjectReference_16ftv9d">
+        <dc:Bounds x="1662" y="145" width="36" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1nii9zd_di" bpmnElement="Activity_1nii9zd" isExpanded="true">
+        <dc:Bounds x="540" y="158" width="490" height="232" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_1mrsqpw_di" bpmnElement="Event_1mrsqpw">
+        <dc:Bounds x="560" y="240" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_1tvmymu_di" bpmnElement="Event_1tvmymu">
+        <dc:Bounds x="972" y="240" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="QuantumCircuitLoadingTask_093dq77_di" bpmnElement="Activity_1ovi5wq">
+        <dc:Bounds x="650" y="218" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1kxh0v1_di" bpmnElement="Activity_090eey0">
+        <dc:Bounds x="810" y="218" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="QuantumCircuitObject_0d7hv10_di" bpmnElement="DataObjectReference_082copy">
+        <dc:Bounds x="762" y="315" width="36" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_18tfuoo_di" bpmnElement="Flow_18tfuoo">
+        <di:waypoint x="596" y="258" />
+        <di:waypoint x="650" y="258" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1e0y0iq_di" bpmnElement="Flow_1e0y0iq">
+        <di:waypoint x="750" y="258" />
+        <di:waypoint x="810" y="258" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_09ng99x_di" bpmnElement="Flow_09ng99x">
+        <di:waypoint x="910" y="258" />
+        <di:waypoint x="972" y="258" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="DataOutputAssociation_1vunuq5_di" bpmnElement="DataOutputAssociation_1vunuq5">
+        <di:waypoint x="742" y="297" />
+        <di:waypoint x="762" y="316" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="DataInputAssociation_0cqau4l_di" bpmnElement="DataInputAssociation_0cqau4l">
+        <di:waypoint x="798" y="317" />
+        <di:waypoint x="814" y="296" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="Activity_058t75e_di" bpmnElement="Activity_058t75e" isExpanded="true">
+        <dc:Bounds x="1120" y="158" width="490" height="232" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_1wm6ixl_di" bpmnElement="Event_1wm6ixl">
+        <dc:Bounds x="1140" y="240" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_123cdvm_di" bpmnElement="Activity_123cdvm">
+        <dc:Bounds x="1390" y="218" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_1i4jtdb_di" bpmnElement="Event_1i4jtdb">
+        <dc:Bounds x="1552" y="240" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="QuantumCircuitLoadingTask_0f07nlv_di" bpmnElement="Activity_1e9w0rk">
+        <dc:Bounds x="1230" y="218" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="QuantumCircuitObject_1ks4h5w_di" bpmnElement="DataObjectReference_1iwaz6w">
+        <dc:Bounds x="1342" y="315" width="36" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_1rj7dd8_di" bpmnElement="Flow_1rj7dd8">
+        <di:waypoint x="1176" y="258" />
+        <di:waypoint x="1230" y="258" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1rid66o_di" bpmnElement="Flow_1rid66o">
+        <di:waypoint x="1330" y="258" />
+        <di:waypoint x="1390" y="258" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0aez9rc_di" bpmnElement="Flow_0aez9rc">
+        <di:waypoint x="1490" y="258" />
+        <di:waypoint x="1552" y="258" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="DataOutputAssociation_0wq16q0_di" bpmnElement="DataOutputAssociation_0wq16q0">
+        <di:waypoint x="1322" y="297" />
+        <di:waypoint x="1342" y="316" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="DataInputAssociation_08jpvy6_di" bpmnElement="DataInputAssociation_08jpvy6">
+        <di:waypoint x="1378" y="321" />
+        <di:waypoint x="1400" y="298" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0uvz93z_di" bpmnElement="Flow_0uvz93z">
+        <di:waypoint x="498" y="258" />
+        <di:waypoint x="540" y="258" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0zsh6o2_di" bpmnElement="Flow_0zsh6o2">
+        <di:waypoint x="1030" y="258" />
+        <di:waypoint x="1120" y="258" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0b6z7wq_di" bpmnElement="Flow_0b6z7wq">
+        <di:waypoint x="1610" y="258" />
+        <di:waypoint x="1650" y="258" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0g6gr12_di" bpmnElement="Flow_0g6gr12">
+        <di:waypoint x="1750" y="258" />
+        <di:waypoint x="1792" y="258" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="DataInputAssociation_078k2ly_di" bpmnElement="DataInputAssociation_078k2ly">
+        <di:waypoint x="1098" y="137" />
+        <di:waypoint x="1123" y="161" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="DataOutputAssociation_160lyf6_di" bpmnElement="DataOutputAssociation_160lyf6">
+        <di:waypoint x="1016" y="158" />
+        <di:waypoint x="1062" y="135" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="DataOutputAssociation_0qnzfxh_di" bpmnElement="DataOutputAssociation_0qnzfxh">
+        <di:waypoint x="1610" y="175" />
+        <di:waypoint x="1662" y="175" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="DataInputAssociation_00md50f_di" bpmnElement="DataInputAssociation_00md50f">
+        <di:waypoint x="1680" y="195" />
+        <di:waypoint x="1680" y="218" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn2:definitions>

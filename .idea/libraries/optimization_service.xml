@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="optimization-service">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/docker/initialized-winery/tosca-definitions/artifacttemplates/https%3A%2F%2Fust-quantil.github.io%2Fquantum%2Fapplications%2Fartifacttemplates/QuokkaOptimizationServiceArtifact/files/optimization-service.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

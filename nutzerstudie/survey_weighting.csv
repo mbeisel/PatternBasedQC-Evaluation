@@ -1,0 +1,36 @@
+﻿Evaluation;;;;;
+;;;;;
+How important are the following benefits of workflow-based quantum applications for you?;;;;;
+;Unimportant;Slightly Important;Important;Very Important;TOTAL
+Reusability;0;0;2;8;28
+Separation of Concerns;0;1;6;3;22
+Scalability;0;3;3;4;21
+Maintainability;0;0;4;6;26
+Reduced Deployment Costs;0;3;5;2;19
+;;;;;
+;;;;;
+How big are the following challenges when realizing workflow-based quantum applications?;;;;;
+;Unimportant;Small;Challenging;Very Challenging;TOTAL
+Integration work;0;2;3;5;23
+Mixed Skillset;0;1;8;1;20
+Hard to test and debug;0;3;3;4;21
+Heterogeneity;1;3;4;2;17
+Deployment of services;0;3;7;0;17
+;;;;;
+;;;;;
+How important are the following aspects for successful workflow monitoring and analysis for you?;;;;;
+;Unimportant;Slightly Important;Important;Very Important;TOTAL
+Unification of hetero data;0;2;7;1;19
+Simplification through abstraction;0;0;6;4;24
+Data filtering and overload prevention;0;0;7;3;23
+Data aggregation to get insights;0;1;7;2;21
+Graphical visualization of important data;0;0;5;5;25
+;;;;;
+;;;;;
+How important are the following benefits when generating quantum workflow using patterns?;;;;;
+;Unimportant;Slightly Important;Important;Very Important;TOTAL
+Low entry barrier;0;0;3;7;27
+Reduced impl effort;0;0;5;5;25
+Reuse of proven solutions;0;1;4;5;24
+Abstraction of technical details;0;0;4;6;26
+;;;;;

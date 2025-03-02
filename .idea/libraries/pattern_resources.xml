@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="pattern-resources">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/pattern-resources/cutting.zip!/" />
+      <root url="jar://$PROJECT_DIR$/pattern-resources/warm-start.zip!/" />
+      <root url="jar://$PROJECT_DIR$/pattern-resources/ibm-mitigation.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

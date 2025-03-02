@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="org_opentosca_NodeTypes_DockerEngine__InterfaceDockerEngine">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/docker/initialized-winery/tosca-definitions/artifacttemplates/http%3A%2F%2Fopentosca.org%2Fartifacttemplates/DockerEngine_InterfaceDockerEngine_IA/files/org_opentosca_NodeTypes_DockerEngine__InterfaceDockerEngine.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
